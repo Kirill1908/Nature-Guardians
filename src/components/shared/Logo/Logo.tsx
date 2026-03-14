@@ -20,10 +20,10 @@ export const Logo = ({ className = "", variant = "header" }: LogoProps) => {
   return (
     <Link
       href="/"
-      className={`${className} inline-block transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0`}
+      className={`${className} select-none inline-block transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0`}
     >
       <Image
-        className="w-200 h-auto"
+        className="w-[200px] h-auto"
         src={logoSrc}
         alt="Логотип Nature Guardians"
         width={150}
