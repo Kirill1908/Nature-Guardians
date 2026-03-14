@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@layer components {
+  .main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media (width >= 640px) {
+      max-width: 640px;
+    }
+    
+    @media (width >= 768px) {
+      max-width: 768px;
+    }
+    
+    @media (width >= 1024px) {
+      max-width: 1024px;
+    }
+    
+    @media (width >= 1280px) {
+      max-width: 1280px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.navLink {
+  position: relative;
+  padding-bottom: 4px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color 0.15s;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #0b0706;
+  transition: width 0.3s;
+}
+
+.navLink:hover {
+  color: #0b0706;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.mobileNavLink {
+  position: relative;
+  padding-bottom: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color 0.15s;
+}
+
+.mobileNavLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #0b0706;
+  transition: width 0.3s;
+}
+
+.mobileNavLink:hover {
+  color: #0b0706;
+}
+
+.mobileNavLink:hover::after {
+  width: 100%;
+}
+
+.donateLink {
+  background-color: #1d2130;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+  transition: opacity 0.15s;
+}
+
+.donateLink:hover {
+  opacity: 0.9;
+}
+
+.active {
+  color: #0b0706;
+}
+
+.inactive {
+  color: #525560;
+}
+
+@media (min-width: 1024px) {
+  .navLink {
+    font-size: 1rem;
+  }
+
+  .donateLink {
+    font-size: 1rem;
+  }
+}
