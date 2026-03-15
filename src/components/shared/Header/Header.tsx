@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Logo } from "../Logo/Logo";
+import { Logo } from "../../ui/Logo/Logo";
 import styles from "./Header.module.css";
 
 const links = [
@@ -59,7 +59,7 @@ export default function Header() {
       </div>
 
       {/* Burger menu */}
-      <div className={`fixed inset-0 bg-white transform transition-transform duration-300 md:hidden overflow-hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed inset-0 z-100 bg-white transform transition-transform duration-300 md:hidden overflow-hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="p-4 flex items-center justify-between">
           <div onClick={() => setIsOpen(false)}>
             <Logo />
