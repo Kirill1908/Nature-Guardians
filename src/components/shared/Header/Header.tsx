@@ -17,6 +17,7 @@ const links = [
 ];
 
 const getHeaderBg = (pathname: string): string => {
+  if (pathname.startsWith("/events")) return "bg-[#EFF7F2]";
   if (["/media", "/donate", "/events"].includes(pathname))
     return "bg-[#EFF7F2]";
   if (pathname === "/contacts") return "bg-[#EBF0F9]";
