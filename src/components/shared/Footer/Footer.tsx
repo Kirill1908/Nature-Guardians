@@ -27,6 +27,13 @@ export default function Footer() {
   const [error, setError] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
 
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // "smooth" для плавності, "auto" для миттєвого стрибка
+    });
+  };
+
   const validateEmail = (email: string) => {
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return pattern.test(email);
@@ -61,7 +68,11 @@ export default function Footer() {
             <ul className="flex flex-col gap-6">
               {links.slice(0, 4).map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className={styles.link}>
+                  <Link
+                    href={link.href}
+                    className={styles.link}
+                    onClick={handleLinkClick}
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -74,7 +85,11 @@ export default function Footer() {
             <ul className="flex flex-col gap-6">
               {links.slice(4).map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className={styles.link}>
+                  <Link
+                    href={link.href}
+                    className={styles.link}
+                    onClick={handleLinkClick}
+                  >
                     {link.label}
                   </Link>
                 </li>

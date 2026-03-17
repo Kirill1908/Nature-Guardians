@@ -20,7 +20,7 @@ export const blogPosts: BlogPostType[] = [
     contentTitle: "Rising temperatures and the urgent need for global action",
     description:
       "Scientists around the world are raising alarms as new data suggests climate change is accelerating beyond initial projections.",
-    image: "/blog/post-1.jpg",
+    image: "/images/blog/post-1.jpg",
     content: [
       {
         text: "Recent studies published by leading environmental research institutes indicate that global temperatures are rising at a rate 40% faster than previously estimated. Arctic ice sheets are melting at record speeds, contributing to rising sea levels that threaten coastal communities worldwide.",
@@ -50,7 +50,7 @@ export const blogPosts: BlogPostType[] = [
     contentTitle: "How city parks and green corridors are saving urban wildlife",
     description:
       "Urban parks and green corridors are becoming critical refuges for wildlife as natural habitats continue to shrink globally.",
-    image: "/blog/post-2.jpeg",
+    image: "/images/blog/post-2.jpeg",
     content: [
       {
         text: "As cities continue to expand, the natural habitats that once surrounded them are disappearing at an alarming rate. Urban green spaces — parks, gardens, green rooftops, and tree-lined streets — are increasingly becoming the last refuges for many species of birds, insects, and small mammals.",
@@ -81,7 +81,7 @@ export const blogPosts: BlogPostType[] = [
     contentTitle: "Microplastics, marine life, and the path to cleaner oceans",
     description:
       "Every year, millions of tons of plastic enter our oceans, threatening marine ecosystems and entering the human food chain.",
-    image: "/blog/post-3.jpeg",
+    image: "/images/blog/post-3.jpeg",
     content: [
       {
         text: "The scale of ocean plastic pollution has reached crisis proportions. An estimated 8 million metric tons of plastic enter the world's oceans every year, joining the estimated 150 million metric tons already circulating in marine environments. This plastic does not disappear — it breaks down into microplastics that persist for hundreds of years.",
