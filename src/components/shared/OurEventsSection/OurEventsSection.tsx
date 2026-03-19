@@ -5,12 +5,13 @@ import Link from "next/link";
 import { EventData, eventsData } from "@/data/events";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-interface OurEventsProps {
+type OurEventsProps = {
   currentEventId?: string;
 }
 
 export default function OurEventsSection({ currentEventId }: OurEventsProps) {
   const [randomEvents, setRandomEvents] = useState<EventData[]>([]);
+
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
       const filtered = currentEventId
@@ -73,8 +74,12 @@ export default function OurEventsSection({ currentEventId }: OurEventsProps) {
                     </span>
                     <span className="w-11 h-0.5 bg-gray-800"></span>
                   </div>
-                  <h3 className="text-3xl md:text-2xl font-bold text-gray-800 leading-10">
-                    {event.title}
+                  <h3 className="text-3xl md:text-2xl font-bold text-gray-800 leading-tight  transition-transform duration-200 group-hover:translate-y-px">
+                    <span
+                      className="group-hover:underline decoration-2 underline-offset-4 decoration-gray-800"
+                    >
+                      {event.title}
+                    </span>
                   </h3>
                 </div>
                 <div className="self-center w-14 h-14 bg-white rounded-full flex items-center justify-center shrink-0 transition-all duration-500 ease-in-out group-hover:translate-x-3">
