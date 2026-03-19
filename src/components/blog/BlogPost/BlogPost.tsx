@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BlogPostType } from "@/data/blogPosts";
 import styles from "./BlogPost.module.css";
 
-interface BlogPostProps {
+type BlogPostProps = {
   post: BlogPostType;
 }
 
