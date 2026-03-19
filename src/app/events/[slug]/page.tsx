@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { FaLocationDot, FaClock } from "react-icons/fa6";
 import OurEventsSection from "@/components/shared/OurEventsSection/OurEventsSection";
+import Breadcrumbs from "@/components/ui/Breadcrumbs/Breadcrumbs";
 
 export default async function EventPage({
   params,
@@ -36,8 +37,9 @@ export default async function EventPage({
           </div>
         </div>
       </section>
-      <section className="main-container mx-auto px-6 md:px-0 py-16 md:py-24">
-        <div className="prose prose-lg max-w-none">
+      <section className="main-container mx-auto px-6 md:px-0">
+        <Breadcrumbs/>
+        <div className="py-16 md:py-18 prose prose-lg max-w-none">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-8">
             About
           </h2>
@@ -50,7 +52,7 @@ export default async function EventPage({
             {event.content[1]}
           </p>
 
-          <div className="relative w-full aspect-21/9 md:aspect-3/1 rounded-2xl overflow-hidden shadow-lg my-12">
+          <div className="relative -mx-6 md:mx-0 aspect-21/9 md:aspect-3/1 md:rounded-2xl overflow-hidden shadow-lg my-12">
             <Image
               src={event.mainImage}
               alt={event.title}

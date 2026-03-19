@@ -3,7 +3,7 @@ import Link from "next/link";
 
 type LogoVariant = "header" | "footer";
 
-interface LogoProps {
+type LogoProps = {
   className?: string;
   variant?: LogoVariant;
 }

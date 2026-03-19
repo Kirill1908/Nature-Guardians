@@ -1,4 +1,5 @@
-export interface EventData {
+export type EventData = {
+  index: number;
   id: string;
   title: string;
   location: string;
@@ -10,6 +11,7 @@ export interface EventData {
 
 export const eventsData: EventData[] = [
   {
+    index: 0,
     id: "plastic-pollution-initiative",
     title: "Say no to using plastic and save Earth",
     location: "8 Brewery Drive, Hudson, NH 03051, USA",
@@ -23,6 +25,7 @@ export const eventsData: EventData[] = [
     mainImage: "/images/events/plastic-event.jpg",
   },
   {
+    index: 1,
     id: "weekly-cleaning-program",
     title: "Weekly cleaning program in our city park",
     location: "Central Park, New York, NY 10024, USA",
@@ -36,6 +39,7 @@ export const eventsData: EventData[] = [
     mainImage: "/images/events/cleaning-event.jpg",
   },
   {
+    index: 2,
     id: "plant-a-tree-initiative",
     title: "Join us and plant a tree for the future",
     location: "Green Valley Reserve, CA 90210, USA",
