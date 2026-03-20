@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { blogPosts } from "@/data/blogPosts";
-import Breadcrumbs from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import BlogCard from "@/components/blog/BlogCard/BlogCard";
 
 export const metadata = {
-  title: "Blog | Nature Guardians",
+  title: "Blog",
 };
 
 export default function BlogPage() {
@@ -48,9 +47,8 @@ export default function BlogPage() {
 
       <hr className="main-container border-t border-gray-200" />
 
-      <section className="px-5 pb-18 bg-white">
+      <section className="px-5 pb-18 bg-white pt-16">
         <div className="main-container space-y-16">
-          <Breadcrumbs />
           {blogPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}

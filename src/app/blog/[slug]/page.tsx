@@ -1,14 +1,14 @@
 import { blogPosts } from "@/data/blogPosts";
 import BlogPost from "@/components/blog/BlogPost/BlogPost";
-import Breadcrumbs from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import { notFound } from "next/navigation";
+import BackButton from "@/components/ui/BackButton/BackButton";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
 export const metadata = {
-  title: "Blog | Nature Guardians",
+  title: "Blog",
 };
 
 export default async function BlogPostPage({ params }: Props) {
@@ -22,7 +22,7 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <main className="pt-12 md:pt-0">
       <div className="hidden md:block main-container mx-auto px-6 md:px-0 md:pt-9 md:mb-10">
-        <Breadcrumbs />
+        <BackButton />
       </div>
       <BlogPost post={post} />
     </main>

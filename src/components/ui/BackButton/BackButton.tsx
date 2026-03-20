@@ -21,7 +21,7 @@ export default function BackButton({
   return (
     <button
       onClick={handleBack}
-      className={`hidden md:flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#70C174] hover:text-gray-800 transition-colors ${className}`}
+      className={`cursor-pointer hidden md:flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#70C174] hover:text-gray-800 transition-colors ${className}`}
     >
       <BsArrowLeft className="text-xl" />
       <span>{label}</span>
