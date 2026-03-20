@@ -41,8 +41,8 @@ export default async function EventPage({
       </section>
       <section className="main-container mx-auto px-6 md:px-0">
         <BackButton />
-
         <div className=" pt-10 pb-16 md:py-16 prose prose-lg max-w-none">
+      
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-8">
             About
           </h2>
