@@ -6,7 +6,7 @@ import OurEventsSection from "@/components/shared/OurEventsSection/OurEventsSect
 import BackButton from "@/components/ui/BackButton/BackButton";
 
 export const metadata = {
-  title: "Our Events"
+  title: "Events"
 }
 
 export default async function EventPage({
@@ -23,7 +23,7 @@ export default async function EventPage({
     <main className="min-h-screen bg-white">
       <section className="mb-6 md:h-100 bg-[#eff7f2] py-16 md:py-24 px-6">
         <div className="main-container">
-          <h1 className="max-w-3xl text-6xl md:text-5xl lg:text-6xl text-left font-bold text-gray-800 leading-[67.20px] mb-12">
+          <h1 className="max-w-3xl text-5xl lg:text-6xl text-left font-bold text-gray-800 leading-[67.20px] mb-12">
             {event.title}
           </h1>
 
