@@ -33,7 +33,7 @@ export default function EventCard({ event }: EventProps) {
         </div>
 
         <Link href={`/events/${event.id}`} className="group block">
-          <h3 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-2 leading-[57.60px] transition-transform duration-200 group-hover:translate-y-px">
+          <h3 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-2 leading-tight transition-transform duration-200 group-hover:translate-y-px">
             <span className="group-hover:underline decoration-2 underline-offset-4 decoration-gray-800">
               {event.title}
             </span>

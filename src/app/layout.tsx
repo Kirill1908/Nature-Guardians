@@ -12,7 +12,10 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Nature Guardians",
+  title: {
+    default: "Nature Guardians",
+    template: "%s | Nature Guardians",
+  },
   description:
     "Join Nature Guardians Foundation in our mission to protect the environment.",
   keywords: [
@@ -23,6 +26,11 @@ export const metadata: Metadata = {
     "Nature Guardians",
   ],
 };
+
+// юзати на сторінці для назви вкладок через роздільник:
+// export const metadata = {
+//   title: "Our Events"
+// }
 
 export default function RootLayout({
   children,

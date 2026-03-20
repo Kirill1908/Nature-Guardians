@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { eventsData } from "@/data/events";
 import EventCard from "@/components/events/EventCard";
-import Breadcrumbs from "@/components/ui/Breadcrumbs/Breadcrumbs";
+
+export const metadata = {
+  title: "Our Events"
+}
 
 export default function EventsPage() {
   return (
@@ -16,7 +19,7 @@ export default function EventsPage() {
               </span>
             </div>
 
-            <h1 className="md:ps-24 text-center md:text-start text-6xl font-bold md:text-5xl lg:text-6xl text-gray-800 leading-[67.20px] mb-8">
+            <h1 className="md:ps-24 text-center md:text-start text-5xl font-bold lg:text-6xl text-gray-800 leading-[67.20px] mb-8">
               Events for a <br className="hidden lg:block" /> better world
             </h1>
 
@@ -44,9 +47,8 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="px-5 pb-18 bg-white">
+      <section className="px-5 py-18 bg-white">
         <div className="main-container space-y-16">
-          <Breadcrumbs/>
           {eventsData.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
