@@ -1,4 +1,5 @@
-export type BlogPostType = {
+export type BlogPostData = {
+  index: number;
   id: string;
   date: string;
   title: string;
@@ -12,8 +13,9 @@ export type BlogPostType = {
   }[];
 };
 
-export const blogPosts: BlogPostType[] = [
+export const blogPosts: BlogPostData[] = [
   {
+    index: 0,
     id: "climate-change",
     date: "21 DEC 2021",
     title: "Is climate change happening faster than expected?",
@@ -44,6 +46,7 @@ export const blogPosts: BlogPostType[] = [
     ],
   },
   {
+    index: 1,
     id: "urban-green-spaces",
     date: "14 JAN 2022",
     title: "The importance of urban green spaces for biodiversity",
@@ -75,6 +78,7 @@ export const blogPosts: BlogPostType[] = [
     ],
   },
   {
+    index: 2,
     id: "ocean-plastic",
     date: "03 MAR 2022",
     title: "Ocean plastic pollution: the silent crisis beneath the waves",
@@ -105,6 +109,7 @@ export const blogPosts: BlogPostType[] = [
     ],
   },
   {
+    index: 3,
     id: "deforestation",
     date: "18 APR 2022",
     title: "Deforestation and its devastating impact on global ecosystems",
@@ -135,6 +140,7 @@ export const blogPosts: BlogPostType[] = [
     ],
   },
   {
+    index: 4,
     id: "renewable-energy",
     date: "07 JUN 2022",
     title: "The rise of renewable energy and the future of our planet",
@@ -165,6 +171,7 @@ export const blogPosts: BlogPostType[] = [
     ],
   },
   {
+    index: 5,
     id: "soil-degradation",
     date: "22 AUG 2022",
     title: "Soil degradation: the invisible environmental crisis",
@@ -195,6 +202,7 @@ export const blogPosts: BlogPostType[] = [
     ],
   },
   {
+    index: 6,
     id: "protecting-pollinators",
     date: "15 NOV 2022",
     title: "Protecting pollinators: why bees matter more than you think",

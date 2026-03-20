@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { BlogPostType } from "@/data/blogPosts";
+import { BlogPostData } from "@/data/blogPosts";
 import styles from "./BlogPost.module.css";
 
 type BlogPostProps = {
-  post: BlogPostType;
+  post: BlogPostData;
 }
 
 export default function BlogPost({ post }: BlogPostProps) {
