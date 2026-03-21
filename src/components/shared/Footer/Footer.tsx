@@ -1,15 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaXTwitter,
-} from "react-icons/fa6";
 import styles from "./Footer.module.css";
 import { Logo } from "@/components/ui/Logo/Logo";
+import Social from "@/components/ui/Social/Social";
 
 const links = [
   { href: "/about-us", label: "About Us" },
@@ -103,7 +98,7 @@ export default function Footer() {
             Subscribe to get latest updates
           </h3>
 
-          <form onSubmit={handleSubmit} noValidate>
+          <form name="subscribe" onSubmit={handleSubmit} noValidate>
             <div className="relative flex flex-col md:flex-row gap-0 w-full md:min-w-sm">
               <input
                 name="email"
@@ -135,44 +130,7 @@ export default function Footer() {
             </div>
           </form>
 
-          <div className="flex gap-6 mt-12 sm:mt-13 lg:mt-6.5 xl:mt-17.5">
-            <Link
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialIcon}
-              aria-label="Facebook"
-            >
-              <FaFacebookF size={18} />
-            </Link>
-            <Link
-              href="https://x.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialIcon}
-              aria-label="Twitter"
-            >
-              <FaXTwitter size={20} />
-            </Link>
-            <Link
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialIcon}
-              aria-label="Instagram"
-            >
-              <FaInstagram size={20} />
-            </Link>
-            <Link
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialIcon}
-              aria-label="LinkedIn"
-            >
-              <FaLinkedinIn size={22} />
-            </Link>
-          </div>
+          <Social/>
         </div>
       </div>
     </footer>
