@@ -20,12 +20,12 @@ export default function ProjectsGrid() {
               sizes="(max-width: 768px) 100vw, 33vw"
             />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
-            <div className="absolute inset-0 flex flex-col justify-between p-6">
+            <div className="absolute inset-0 flex flex-col justify-between pt-20 px-12 pb-12">
               <div>
-                <h3 className="text-white font-bold text-2xl leading-tight mb-3">
+                <h3 className="text-white font-bold text-[28px] leading-tight mb-3 line-clamp-2 min-h-[64px]">
                   {project.title}
                 </h3>
-                <p className="text-white/80 text-sm leading-6 line-clamp-3">
+                <p className="text-white/80 text-base leading-6 line-clamp-3">
                   {project.description}
                 </p>
               </div>
