@@ -6,16 +6,23 @@ import { BsArrowLeft } from 'react-icons/bs';
 type BackButtonProps = {
   label?: string;
   className?: string;
+   href?: string;
 };
 
 export default function BackButton({
   label = "Back",
   className = "",
+   href,
 }: BackButtonProps) {
   const router = useRouter();
 
   const handleBack = () => {
-    router.back();
+    if (href) {
+      router.push(href);
+    } else {
+      router.back();
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
