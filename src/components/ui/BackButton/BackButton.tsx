@@ -1,28 +1,27 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { BsArrowLeft } from 'react-icons/bs';
+import { useRouter, useSearchParams } from "next/navigation";
+import { BsArrowLeft } from "react-icons/bs";
 
 type BackButtonProps = {
   label?: string;
   className?: string;
-   href?: string;
+  fallbackHref?: string;
 };
 
 export default function BackButton({
   label = "Back",
   className = "",
-   href,
+  fallbackHref = "",
 }: BackButtonProps) {
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const from = searchParams.get("from");
 
   const handleBack = () => {
-    if (href) {
-      router.push(href);
-    } else {
-      router.back();
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    router.push(from ?? fallbackHref);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

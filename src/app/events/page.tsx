@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { eventsData } from "@/data/events";
-import EventCard from "@/components/events/EventCard";
+import EventCard from "@/components/events/EventCard/EventCard";
 
 export const metadata = {
   title: "Events"
