@@ -12,7 +12,6 @@ export default function Media() {
     <main>
       <section className="py-10 px-6 md:py-16 md:px-0 bg-[#EFF7F2] overflow-hidden">
         <div className="main-container flex flex-col md:gap-24 xl:flex-row items-center">
-          {/* Left — headline block */}
           <div className="flex-1 lg:flex-[1.8] self-start">
             <div className="flex items-center gap-6 mb-8">
               <span className="w-18 h-0.5 bg-gray-800"></span>

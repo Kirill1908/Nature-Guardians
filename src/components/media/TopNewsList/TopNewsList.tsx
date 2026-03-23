@@ -20,7 +20,7 @@ export default function TopNewsList() {
             />
           </Link>
 
-          <div className="">
+          <div>
             <h3 className="text-gray-800 font-medium md:text-xl leading-tight mb-1 transition-transform duration-200 group-hover:translate-y-px">
               <Link href={`/blog/${item.id}?from=/media`} className="group">
                 <span className="group-hover:underline decoration-2 underline-offset-4 decoration-gray-800">
