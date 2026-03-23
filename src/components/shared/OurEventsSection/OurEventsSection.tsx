@@ -13,6 +13,7 @@ type OurEventsProps = {
 export default function OurEventsSection({ currentEventId }: OurEventsProps) {
   const [randomEvents, setRandomEvents] = useState<EventData[]>([]);
   const pathname = usePathname();
+  const fromPath = currentEventId ? "/events" : pathname;
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
@@ -57,7 +58,7 @@ export default function OurEventsSection({ currentEventId }: OurEventsProps) {
             return (
               <Link
                 key={event.id}
-                href={`/events/${event.id}?from=${pathname}`}
+                href={`/events/${event.id}?from=${fromPath}`}
                 className="group flex items-start gap-6 p-10 bg-[#BEF3C0] rounded-lg transition-all duration-500 ease-in-out hover:bg-[#A3E6A6] hover:shadow-md"
               >
                 <div className="flex flex-col items-center min-w-15 -mt-1.5">
