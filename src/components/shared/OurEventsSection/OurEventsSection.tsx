@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { EventData, eventsData } from "@/data/events";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { usePathname } from "next/navigation";
 
 type OurEventsProps = {
   currentEventId?: string;
@@ -11,6 +12,8 @@ type OurEventsProps = {
 
 export default function OurEventsSection({ currentEventId }: OurEventsProps) {
   const [randomEvents, setRandomEvents] = useState<EventData[]>([]);
+  const pathname = usePathname();
+  const fromPath = currentEventId ? "/events" : pathname;
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
@@ -42,7 +45,7 @@ export default function OurEventsSection({ currentEventId }: OurEventsProps) {
     <section className="pb-20 bg-white">
       <div className="main-container">
         <div className="flex items-center justify-between mb-12 px-6 md:px-0">
-          <h2 className="text-4xl font-medium leading-14 text-gray-800 ">
+          <h2 className="text-4xl font-medium leading-14 text-gray-800">
             {currentEventId ? "Other events" : "Our Events"}
           </h2>
           <div className="flex-1 h-px bg-[#E5E5E5] ml-6 md:block"></div>
@@ -55,7 +58,7 @@ export default function OurEventsSection({ currentEventId }: OurEventsProps) {
             return (
               <Link
                 key={event.id}
-                href={`/events/${event.id}`}
+                href={`/events/${event.id}?from=${fromPath}`}
                 className="group flex items-start gap-6 p-10 bg-[#BEF3C0] rounded-lg transition-all duration-500 ease-in-out hover:bg-[#A3E6A6] hover:shadow-md"
               >
                 <div className="flex flex-col items-center min-w-15 -mt-1.5">

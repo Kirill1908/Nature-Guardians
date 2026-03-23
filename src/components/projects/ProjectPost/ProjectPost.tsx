@@ -21,7 +21,7 @@ export default function ProjectPost({ project }: ProjectPostProps) {
       </div>
 
       {/* Block 2 — image */}
-      <div className="relative w-full h-[400px] mb-12 md:rounded-lg overflow-hidden">
+      <div className="relative w-full h-100 mb-12 md:rounded-lg overflow-hidden">
         <Image
           src={project.image}
           alt={project.title}

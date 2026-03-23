@@ -73,7 +73,7 @@ export default function Header() {
 
       {/* Burger menu */}
       <div
-        className={`fixed inset-0 z-[100] bg-white transform transition-transform duration-300 md:hidden overflow-hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed inset-0 z-100 bg-white transform transition-transform duration-300 md:hidden overflow-hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className={`p-4 flex items-center justify-between ${bgColor}`}>
           <div onClick={() => setIsOpen(false)}>
