@@ -47,8 +47,8 @@ export default function BlogPage() {
 
       <hr className="main-container border-t border-gray-200" />
 
-      <section className="px-5 pb-18 bg-white pt-16">
-        <div className="main-container space-y-16">
+      <section className="px-5 pb-16 md:pb-24 bg-white pt-16 md:pt-24">
+        <div className="main-container flex flex-col gap-16 md:gap-16">
           {blogPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}

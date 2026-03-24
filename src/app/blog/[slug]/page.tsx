@@ -20,7 +20,7 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   return (
-    <main className="pt-12 md:pt-0">
+    <main className="pt-16 md:pt-0">
       <div className="hidden md:block main-container mx-auto px-6 md:px-0 md:pt-9 md:mb-10">
         <BackButton fallbackHref="/blog" />
       </div>

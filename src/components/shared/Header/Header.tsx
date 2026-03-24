@@ -37,7 +37,7 @@ export default function Header() {
   }, [isOpen]);
 
   return (
-    <>
+    <div className="contents">
       <header
         className={`sticky top-0 z-50 p-4 backdrop-blur-md shadow-md ${bgColor}`}
       >
@@ -87,7 +87,7 @@ export default function Header() {
             <FiX size={28} />
           </button>
         </div>
-        <nav className="flex flex-col gap-6 p-8 mt-4">
+        <nav className="flex flex-col gap-6 p-8">
           {links.map(({ href, label }) => (
             <Link
               key={href}
@@ -104,6 +104,6 @@ export default function Header() {
           ))}
         </nav>
       </div>
-    </>
+    </div>
   );
 }
