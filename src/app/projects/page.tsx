@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/projects/ProjectCard/ProjectCard";
+import CallToAction from "@/components/shared/CallToAction/CallToAction";
 
 export const metadata = {
   title: "Projects",
@@ -54,38 +55,87 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-<section className="bg-[#EBF0F9] py-16 px-5 md:px-0">
-  <div className="main-container grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div className="flex items-start gap-4">
-      <Image src="/images/icons/1.svg" alt="plantation icon" width={32} height={32} className="shrink-0" />
-      <div className="flex flex-col">
-        <h3 className="text-2xl font-bold text-gray-800 mb-2">200+ Plantation in 1 week</h3>
-        <p className="text-zinc-600 text-base leading-6">Our volunteers plant hundreds of trees every week, restoring forests and rebuilding natural habitats across the region.</p>
+      <section className="bg-[#EBF0F9] py-16 px-5 md:px-0 mb-16">
+        <div className="main-container grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex items-start gap-4">
+            <Image
+              src="/images/icons/1.svg"
+              alt="plantation icon"
+              width={32}
+              height={32}
+              className="shrink-0"
+            />
+            <div className="flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                200+ Plantation in 1 week
+              </h3>
+              <p className="text-zinc-600 text-base leading-6">
+                Our volunteers plant hundreds of trees every week, restoring
+                forests and rebuilding natural habitats across the region.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <Image
+              src="/images/icons/2.svg"
+              alt="donation icon"
+              width={32}
+              height={32}
+              className="shrink-0"
+            />
+            <div className="flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                230 People Have donated
+              </h3>
+              <p className="text-zinc-600 text-base leading-6">
+                Generous supporters from around the world have contributed to
+                our environmental programs, making real change possible.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <Image
+              src="/images/icons/3.svg"
+              alt="people icon"
+              width={32}
+              height={32}
+              className="shrink-0"
+            />
+            <div className="flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                30+ people joined
+              </h3>
+              <p className="text-zinc-600 text-base leading-6">
+                A growing community of passionate volunteers has joined our
+                mission to protect nature and build a more sustainable future.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <Image
+              src="/images/icons/4.svg"
+              alt="raised icon"
+              width={32}
+              height={32}
+              className="shrink-0"
+            />
+            <div className="flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                $324 Raised for this initiate
+              </h3>
+              <p className="text-zinc-600 text-base leading-6">
+                Every dollar raised goes directly to funding our conservation
+                projects, from wildlife protection to urban greening
+                initiatives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="px-5 md:px-0">
+        <CallToAction />
       </div>
-    </div>
-    <div className="flex items-start gap-4">
-      <Image src="/images/icons/2.svg" alt="donation icon" width={32} height={32} className="shrink-0" />
-      <div className="flex flex-col">
-        <h3 className="text-2xl font-bold text-gray-800 mb-2">230 People Have donated</h3>
-        <p className="text-zinc-600 text-base leading-6">Generous supporters from around the world have contributed to our environmental programs, making real change possible.</p>
-      </div>
-    </div>
-    <div className="flex items-start gap-4">
-      <Image src="/images/icons/3.svg" alt="people icon" width={32} height={32} className="shrink-0" />
-      <div className="flex flex-col">
-        <h3 className="text-2xl font-bold text-gray-800 mb-2">30+ people joined</h3>
-        <p className="text-zinc-600 text-base leading-6">A growing community of passionate volunteers has joined our mission to protect nature and build a more sustainable future.</p>
-      </div>
-    </div>
-    <div className="flex items-start gap-4">
-      <Image src="/images/icons/4.svg" alt="raised icon" width={32} height={32} className="shrink-0" />
-      <div className="flex flex-col">
-        <h3 className="text-2xl font-bold text-gray-800 mb-2">$324 Raised for this initiate</h3>
-        <p className="text-zinc-600 text-base leading-6">Every dollar raised goes directly to funding our conservation projects, from wildlife protection to urban greening initiatives.</p>
-      </div>
-    </div>
-  </div>
-</section>
     </main>
   );
 }
