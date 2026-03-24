@@ -28,14 +28,12 @@ export default function OurNewsSection({
           </div>
         )}
 
-        {/* Грід карток */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-9 gap-x-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-9 gap-x-6 px-6 md:px-0">
           {news.map((item) => (
             <div key={item.id} className="flex flex-col">
-              {/* Картинка */}
               <Link
                 href={`/blog/${item.id}?from=/media`}
-                className="group w-screen -mx-5 sm:mx-0 sm:w-full relative aspect-4/3 sm:rounded-lg overflow-hidden mb-4 block"
+                className="group w-full relative aspect-4/3 rounded-lg overflow-hidden mb-4 block"
               >
                 <Image
                   src={item.image}
@@ -46,7 +44,6 @@ export default function OurNewsSection({
                 />
               </Link>
 
-              {/* Заголовок */}
               <h3 className="text-gray-800 font-bold text-[20px] leading-snug mb-2 transition-transform duration-200 group-hover:translate-y-px">
                 <Link href={`/blog/${item.id}?from=/media`} className="group">
                   <span className="group-hover:underline decoration-2 underline-offset-4 decoration-gray-800 line-clamp-2">
@@ -55,7 +52,6 @@ export default function OurNewsSection({
                 </Link>
               </h3>
 
-              {/* Опис */}
               <p className="text-zinc-500 text-[16px] leading-relaxed line-clamp-2">
                 {item.description}
               </p>

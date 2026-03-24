@@ -21,7 +21,7 @@ export default async function EventPage({
 
   return (
     <main className="min-h-screen bg-white">
-      <section className="mb-6 md:h-100 bg-[#eff7f2] py-16 md:py-24 px-6">
+      <section className="mb-5 md:mb-9.5 md:h-100 bg-[#eff7f2] py-16 md:py-24 px-6">
         <div className="main-container">
           <h1 className="max-w-3xl text-5xl lg:text-6xl text-left font-bold text-gray-800 leading-[67.20px] mb-12">
             {event.title}
@@ -41,7 +41,7 @@ export default async function EventPage({
       </section>
       <section className="main-container mx-auto px-6 md:px-0">
         <BackButton fallbackHref="/events"/>
-        <div className=" pt-10 pb-16 md:py-16 prose prose-lg max-w-none">
+        <div className="pt-5 md:pt-9.5 pb-16 md:pb-24 prose prose-lg max-w-none">
       
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-8">
             About

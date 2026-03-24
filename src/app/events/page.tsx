@@ -47,8 +47,8 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="px-5 py-18 bg-white">
-        <div className="main-container space-y-16">
+      <section className="px-5 py-16 md:py-24 bg-white">
+        <div className="main-container space-y-12 md:space-y-16">
           {eventsData.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}

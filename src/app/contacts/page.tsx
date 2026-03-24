@@ -75,7 +75,7 @@ export default function Contacts() {
       </section>
 
       <section>
-        <div className="main-container pt-2.5 pb-24">
+        <div className="main-container pt-2 md:pt-4 pb-16 md:pb-24">
           <ContactForm />
         </div>
       </section>
