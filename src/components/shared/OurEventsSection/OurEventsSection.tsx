@@ -42,7 +42,7 @@ export default function OurEventsSection({ currentEventId }: OurEventsProps) {
   };
 
   return (
-    <section className="pb-20 bg-white">
+    <section className="pb-16 md:pb-24 bg-white">
       <div className="main-container">
         <div className="flex items-center justify-between mb-12 px-6 md:px-0">
           <h2 className="text-4xl font-medium leading-14 text-gray-800">

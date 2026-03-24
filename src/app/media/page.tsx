@@ -10,7 +10,7 @@ export const metadata = {
 export default function Media() {
   return (
     <main>
-      <section className="py-10 px-6 md:py-16 md:px-0 bg-[#EFF7F2] overflow-hidden">
+      <section className="py-16 px-6 md:py-24 md:px-0 bg-[#EFF7F2] overflow-hidden">
         <div className="main-container flex flex-col md:gap-24 xl:flex-row items-center">
           <div className="flex-1 lg:flex-[1.8] self-start">
             <div className="flex items-center gap-6 mb-8">
@@ -31,7 +31,7 @@ export default function Media() {
             </p>
             <div className="text-center md:text-start md:ps-24">
               <Link
-                href={`/projects`}
+                href={`/blog`}
                 className="px-8 py-4 bg-[#70C174] text-white rounded-sm hover:opacity-90 transition-colors"
               >
                 Read more
