@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CallToAction() {
   return (
-    <section className="relative overflow-hidden rounded-xl main-container mb-16">
+    <section className="relative overflow-hidden rounded-xl main-container mx-5 md:mx-auto">
       <Image
         src="/images/shared/cta-bg.jpg"
         alt="Call to action background"

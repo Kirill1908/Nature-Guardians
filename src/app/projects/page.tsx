@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="bg-white">
-      <section className="md:h-130 px-5 py-16 md:py-24 overflow-hidden">
+    <main className="bg-white py-16 md:py-24">
+      <section className="px-5 pb-16 md:pb-24 overflow-hidden">
         <div className="main-container flex flex-col md:gap-14 md:flex-row">
           <div className="flex-[1.5] lg:flex-[1.8]">
             <div className="flex items-center gap-6 mb-6">
@@ -24,14 +24,14 @@ export default function ProjectsPage() {
               Projects for a <br className="hidden lg:block" /> better world
             </h1>
 
-            <p className="pb-10 text-center md:text-start md:ps-24 text-zinc-600 text-base md:text-lg font-normal leading-6 md:max-w-160">
+            <p className="text-center md:text-start md:ps-24 text-zinc-600 text-base md:text-lg font-normal leading-6 md:max-w-160">
               Discover our ongoing environmental initiatives. From reforestation
               and wildlife protection to urban cleanliness programs, we are
               committed to making a lasting impact on our planet.
             </p>
           </div>
           <div className="flex-1 w-full flex justify-center md:justify-end">
-            <div className="h-75 relative overflow-hidden shadow-sm -mx-5 w-[calc(100%+2.5rem)] aspect-4/3 md:mx-0 md:w-full md:max-w-125 md:h-full md:aspect-auto md:rounded-xl">
+            <div className="h-75 relative overflow-hidden shadow-sm -mx-5 w-[calc(100%+2.5rem)] aspect-4/3 md:mx-0 md:w-full md:max-w-125 md:h-80 md:aspect-auto md:rounded-xl">
               <Image
                 src="/images/projects/hero-project.jpeg"
                 alt="Projects hero"
@@ -47,16 +47,16 @@ export default function ProjectsPage() {
 
       <hr className="main-container border-t border-gray-200" />
 
-      <section className="px-5 pb-18 bg-white pt-16">
-        <div className="main-container space-y-16">
+      <section className="px-5 pb-16 md:pb-24 bg-white pt-16 md:pt-24">
+        <div className="main-container flex flex-col gap-12 md:gap-16">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </section>
 
-      <section className="bg-[#EBF0F9] py-16 px-5 md:px-0 mb-16">
-        <div className="main-container grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="bg-[#EBF0F9] py-16 md:py-24 px-5 md:px-0 mb-16 md:mb-24">
+        <div className="main-container grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           <div className="flex items-start gap-4">
             <Image
               src="/images/icons/1.svg"
@@ -133,9 +133,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <div className="px-5 md:px-0">
-        <CallToAction />
-      </div>
+      <CallToAction />
     </main>
   );
 }

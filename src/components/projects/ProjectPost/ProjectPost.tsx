@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ProjectData } from "@/data/projects";
-import styles from "./ProjectPost.module.css";
 
 type ProjectPostProps = {
   project: ProjectData;
@@ -8,20 +7,23 @@ type ProjectPostProps = {
 
 export default function ProjectPost({ project }: ProjectPostProps) {
   return (
-    <article className={`${styles.post} main-container`}>
-
-      {/* Block 1 — intro text */}
-      <div className={styles.intro}>
-        <h1 className={`${styles.title} mb-8`}>{project.title}</h1>
-        <div className={`${styles.introText} flex flex-col gap-6 mb-8`}>
+    <article className="main-container pb-16 md:pb-24">
+      {/* Title */}
+      <div className="mx-auto px-4 mb-12 md:mb-16">
+        <h1 className="text-[48px] md:text-[60px] font-bold text-[#1d2130] leading-[1.3] mb-8">
+          {project.title}
+        </h1>
+        <div className="flex flex-col gap-6">
           {project.intro.map((paragraph, index) => (
-            <p key={index} className={styles.text}>{paragraph}</p>
+            <p key={index} className="text-base text-[#525560] leading-[1.7]">
+              {paragraph}
+            </p>
           ))}
         </div>
       </div>
 
-      {/* Block 2 — image */}
-      <div className="relative w-full h-100 mb-12 md:rounded-lg overflow-hidden">
+      {/* Image */}
+      <div className="relative w-full h-100 mb-12 md:mb-16 md:rounded-lg overflow-hidden">
         <Image
           src={project.image}
           alt={project.title}
@@ -30,20 +32,25 @@ export default function ProjectPost({ project }: ProjectPostProps) {
         />
       </div>
 
-      {/* Block 3 — content */}
-      <div className={`${styles.content} flex flex-col gap-6`}>
-        <h2 className={`${styles.contentTitle} mb-2`}>{project.content.heading}</h2>
-        <p className={styles.text}>{project.content.text}</p>
-        <ul className="flex flex-col gap-2 pl-4">
+      {/* Text Content */}
+      <div className="mx-auto px-4 flex flex-col gap-5">
+        <h2 className="text-[32px] md:text-[48px] font-bold text-[#1d2130] leading-[1.3] mb-2">
+          {project.content.heading}
+        </h2>
+        <p className="text-base text-[#525560] leading-[1.7]">
+          {project.content.text}
+        </p>
+        <ul className="flex flex-col gap-2 pl-6 list-disc">
           {project.content.list.map((item, i) => (
-            <li key={i} className={`${styles.listItem} list-disc`}>
+            <li key={i} className="text-base text-[#525560] leading-[1.7]">
               {item}
             </li>
           ))}
         </ul>
-        <p className={styles.text}>{project.content.conclusion}</p>
+        <p className="text-base text-[#525560] leading-[1.7]">
+          {project.content.conclusion}
+        </p>
       </div>
-
     </article>
   );
 }

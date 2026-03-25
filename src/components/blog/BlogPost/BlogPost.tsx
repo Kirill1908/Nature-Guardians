@@ -7,7 +7,7 @@ type BlogPostProps = {
 
 export default function BlogPost({ post }: BlogPostProps) {
   return (
-    <article className="pb-16 md:pb-24 main-container">
+    <article className="main-container">
       {/* Title and Date */}
       <div className="max-w-[1024px] mx-auto px-4 mb-12 md:mb-16 text-center flex flex-col items-center">
         <p className="text-base text-[#1d2130] mb-4">{post.date}</p>
