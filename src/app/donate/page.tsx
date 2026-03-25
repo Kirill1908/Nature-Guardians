@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function Donate() {
   return (
-    <main>
-      <section className="px-5 pt-12 pb-16 md:pt-24 md:pb-24 bg-[#eff7f2] overflow-hidden">
+    <main className="pb-16 md:pb-24">
+      <section className="px-5 py-16 md:py-24 bg-[#eff7f2] overflow-hidden">
         <div className="main-container flex flex-col md:gap-14 md:flex-row">
           <div className="flex-[1.5] lg:flex-[1.8]">
             <div className="flex items-center gap-6 mb-6">
@@ -127,7 +127,7 @@ export default function Donate() {
 
       <section
         id="volunteer"
-        className="px-5 pt-12 pb-16 md:pt-24 md:pb-24 bg-[#fde8e8] overflow-hidden"
+        className="px-5 py-16 md:py-24 bg-[#fde8e8] overflow-hidden"
       >
         <div className="main-container flex flex-col md:gap-14 md:flex-row">
           <div className="flex-[1.5] lg:flex-[1.8]">
@@ -223,7 +223,7 @@ export default function Donate() {
 
       <hr className="main-container border-t border-gray-200" />
 
-      <section className="px-5 py-16 md:py-24">
+      <section className="px-5 pt-16 md:pt-24">
         <div className="main-container flex flex-col md:flex-row gap-12 md:gap-16">
           <div className="md:w-1/3">
             <h2 className="text-4xl font-bold text-gray-800 leading-tight">

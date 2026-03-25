@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function BlogPage() {
   return (
-    <main className="bg-white">
-      <section className="md:h-130 px-5 py-16 md:py-24 overflow-hidden">
+    <main className="bg-white py-16 md:py-24">
+      <section className="px-5 pb-16 md:pb-24 overflow-hidden">
         <div className="main-container flex flex-col md:gap-14 md:flex-row">
           <div className="flex-[1.5] lg:flex-[1.8]">
             <div className="flex items-center gap-6 mb-6">
@@ -23,7 +23,7 @@ export default function BlogPage() {
               Stories for a <br className="hidden lg:block" /> greener world
             </h1>
 
-            <p className="pb-10 text-center md:text-start md:ps-24 text-zinc-600 text-base md:text-lg font-normal leading-6 md:max-w-160">
+            <p className="text-center md:text-start md:ps-24 text-zinc-600 text-base md:text-lg font-normal leading-6 md:max-w-160">
               Explore our latest articles on ecology, sustainability, and
               environmental action. We believe that informed communities are
               empowered communities — ready to protect our planet for future
@@ -47,8 +47,8 @@ export default function BlogPage() {
 
       <hr className="main-container border-t border-gray-200" />
 
-      <section className="px-5 pb-18 bg-white pt-16">
-        <div className="main-container space-y-16">
+      <section className="px-5 bg-white pt-16 md:pt-24">
+        <div className="main-container flex flex-col gap-12 md:gap-16">
           {blogPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}
