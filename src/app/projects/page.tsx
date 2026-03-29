@@ -59,7 +59,7 @@ export default function ProjectsPage() {
         <div className="main-container grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           <div className="flex items-start gap-4">
             <Image
-              src="/images/icons/1.svg"
+              src="/images/icons/projects-statistics/plantation-in-week.svg"
               alt="plantation icon"
               width={32}
               height={32}
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
           </div>
           <div className="flex items-start gap-4">
             <Image
-              src="/images/icons/2.svg"
+              src="/images/icons/projects-statistics/people-have-donated.svg"
               alt="donation icon"
               width={32}
               height={32}
@@ -95,7 +95,7 @@ export default function ProjectsPage() {
           </div>
           <div className="flex items-start gap-4">
             <Image
-              src="/images/icons/3.svg"
+              src="/images/icons/projects-statistics/people-joined.svg"
               alt="people icon"
               width={32}
               height={32}
@@ -113,7 +113,7 @@ export default function ProjectsPage() {
           </div>
           <div className="flex items-start gap-4">
             <Image
-              src="/images/icons/4.svg"
+              src="/images/icons/projects-statistics/raised-for-this-initiate.svg"
               alt="raised icon"
               width={32}
               height={32}

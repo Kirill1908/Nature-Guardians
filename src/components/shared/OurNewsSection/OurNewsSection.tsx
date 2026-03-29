@@ -10,7 +10,7 @@ type OurNewsSectionProps = {
 };
 
 export default function OurNewsSection({
-  className = "pb-20",
+  className = "pb-16 md:pb-24",
 }: OurNewsSectionProps) {
   const news = blogPosts.slice(-4);
   const pathname = usePathname();
