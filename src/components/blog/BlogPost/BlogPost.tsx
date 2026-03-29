@@ -11,7 +11,7 @@ export default function BlogPost({ post }: BlogPostProps) {
       {/* Title and Date */}
       <div className="max-w-[1024px] mx-auto px-4 mb-12 md:mb-16 text-center flex flex-col items-center">
         <p className="text-base text-[#1d2130] mb-4">{post.date}</p>
-        <h1 className="text-[48px] md:text-[60px] font-bold text-[#1d2130] leading-[1.3] mb-4">
+        <h1 className="text-[48px] md:text-[60px] font-bold text-[#1d2130] leading-[1.3] mb-8">
           {post.title}
         </h1>
         <p className="text-base text-[#525560] leading-[1.6]">
