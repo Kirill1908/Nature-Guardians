@@ -12,7 +12,7 @@ export default function Donate() {
       <section className="px-5 py-16 md:py-24 bg-[#eff7f2] overflow-hidden">
         <div className="main-container flex flex-col md:gap-14 md:flex-row">
           <div className="flex-[1.5] lg:flex-[1.8]">
-            <div className="flex items-center gap-6 mb-6">
+            <div className="flex items-center gap-6 mb-8">
               <span className="w-18 h-0.5 bg-gray-800"></span>
               <span className="text-gray-800 font-bold uppercase tracking-[2px] text-sm">
                 Donate
@@ -131,7 +131,7 @@ export default function Donate() {
       >
         <div className="main-container flex flex-col md:gap-14 md:flex-row">
           <div className="flex-[1.5] lg:flex-[1.8]">
-            <div className="flex items-center gap-6 mb-6">
+            <div className="flex items-center gap-6 mb-8">
               <span className="w-18 h-0.5 bg-gray-800"></span>
               <span className="text-gray-800 font-bold uppercase tracking-[2px] text-sm">
                 Volunteer
