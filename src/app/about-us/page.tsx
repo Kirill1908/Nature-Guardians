@@ -18,11 +18,11 @@ export default function AboutUs() {
       <section className="px-6 py-16 md:py-24 bg-white overflow-hidden">
         <div className="main-container">
           <div className="flex items-center gap-6 mb-8">
-              <span className="w-18 h-0.5 bg-gray-800"></span>
-              <span className="text-gray-800 font-bold uppercase tracking-[2px] text-sm">
-                Our Events
-              </span>
-            </div>
+            <span className="w-18 h-0.5 bg-gray-800"></span>
+            <span className="text-gray-800 font-bold uppercase tracking-[2px] text-sm">
+              Our Events
+            </span>
+          </div>
 
           <div className="flex flex-col md:flex-row md:gap-14">
             <div className="flex-[1.5] lg:flex-[1.8] mb-10 md:mb-0">
@@ -97,31 +97,31 @@ export default function AboutUs() {
 
       <AwardsSection />
       <OurJourneySection />
-      
+
       <section className="px-5 pb-16 md:pb-24 bg-white">
-      <div className="main-container">
+        <div className="main-container">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Meet our team
+            </h2>
+            <p className="text-zinc-500 text-base max-w-md mx-auto leading-6">
+              Our dedicated team of environmental advocates works tirelessly to
+              protect nature and inspire communities worldwide.
+            </p>
+          </div>
 
-        <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Meet our team
-          </h2>
-          <p className="text-zinc-500 text-base max-w-md mx-auto leading-6">
-            Our dedicated team of environmental advocates works tirelessly
-            to protect nature and inspire communities worldwide.
-          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12">
+            {(teamData as TeamMember[]).map((member) => (
+              <TeamCard key={member.id} {...member} />
+            ))}
+          </div>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12">
-          {(teamData as TeamMember[]).map((member) => (
-            <TeamCard key={member.id} {...member} />
-          ))}
-        </div>
-
-      </div>
       </section>
-      <CallToAction/>
+      <section className="pb-16 md:pb-24">
+        <CallToAction />
+      </section>
       <OurNewsSection />
-      <OurEventsSection/>
+      <OurEventsSection />
     </main>
   );
 }

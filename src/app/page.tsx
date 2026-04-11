@@ -3,6 +3,9 @@ import Link from "next/link";
 
 import { whatWeDoItems } from "@/data/whatWeDoItems";
 import ProjectsGrid from "@/components/shared/ProjectsGrid/ProjectsGrid";
+import CallToAction from "@/components/shared/CallToAction/CallToAction";
+import OurNewsSection from "@/components/shared/OurNewsSection/OurNewsSection";
+import OurEventsSection from "@/components/shared/OurEventsSection/OurEventsSection";
 
 export default function HomeHero() {
   const displayItems = whatWeDoItems.slice(0, 4);
@@ -52,6 +55,8 @@ export default function HomeHero() {
           </div>
         </div>
       </section>
+      {/* Know about us Section */}
+    
       {/* What we do Section */}
       <section className="bg-[#EFF7F2] py-16 md:py-24 overflow-hidden">
         <div className="main-container px-5">
@@ -133,6 +138,19 @@ export default function HomeHero() {
           <ProjectsGrid />
         </div>
       </section>
+
+      {/* How we spend your donations Section */}
+
+      {/* CallToAction Section */}
+      <section className="pb-16 md:pb-24">
+        <CallToAction />
+      </section>
+
+      {/* Read our news Section */}
+      <OurNewsSection />
+
+      {/* Our events Section */}
+      <OurEventsSection />
     </main>
   );
 }
