@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 
 export default function ProjectsGrid() {
   return (
-    <section className="main-container px-6 md:px-0">
+    <section className="main-container">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project) => (
           <Link

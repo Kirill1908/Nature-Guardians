@@ -22,11 +22,15 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <main className="pt-16 md:pt-0 pb-16 md:pb-24">
-      <div className="hidden md:block main-container mx-auto px-6 md:px-0 md:pt-9 md:mb-10">
+      <div className="hidden md:block main-container mx-auto md:px-0 md:pt-9 md:mb-10">
         <BackButton label="Back" fallbackHref="/projects" />
       </div>
+
       <ProjectPost project={project} />
-      <ProjectsGrid />
+
+      <div className="px-5 md:px-0">
+        <ProjectsGrid />
+      </div>
     </main>
   );
 }
