@@ -1,7 +1,7 @@
 import AwardsSection from "@/components/about/AwardsSection/AwardsSection";
 import OurJourneySection from "@/components/about/OurJourneySection/OurJourneySection";
 import TeamCard from "@/components/about/TeamCard/TeamCard";
-import { VideoSequencePlayer } from "@/components/about/VideoSequencePlayer/VideoSequencePlayer";
+import VideoSection from "@/components/about/VideoSection/VideoSection";
 import CallToAction from "@/components/shared/CallToAction/CallToAction";
 import OurEventsSection from "@/components/shared/OurEventsSection/OurEventsSection";
 import OurNewsSection from "@/components/shared/OurNewsSection/OurNewsSection";
@@ -15,12 +15,12 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <main>
-      <section className="px-6 py-16 md:py-24 bg-white overflow-hidden">
+      <section className="px-5 py-16 md:py-24 bg-white overflow-hidden">
         <div className="main-container">
           <div className="flex items-center gap-6 mb-8">
             <span className="w-18 h-0.5 bg-gray-800"></span>
             <span className="text-gray-800 font-bold uppercase tracking-[2px] text-sm">
-              Our Events
+              Know about us
             </span>
           </div>
 
@@ -48,7 +48,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <VideoSequencePlayer />
+      <VideoSection />
 
       <section className="pt-71 md:pt-79 -mt-55 px-5 pb-16 md:pb-24 bg-[#EFF7F2] overflow-hidden">
         <div className="main-container lg:px-24 flex flex-col md:flex-row md:gap-14">
@@ -93,6 +93,7 @@ export default function AboutUs() {
       <SupportersSection
         classNameForLine="hidden"
         classNameForBg="bg-[#EFF7F2]"
+        classNameForPB = "md:pb-24"
       />
 
       <AwardsSection />
