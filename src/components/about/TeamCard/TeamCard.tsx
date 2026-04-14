@@ -6,11 +6,12 @@ import { TeamMember } from "@/data/team";
 export default function TeamCard({ name, role, image, social }: TeamMember) {
   return (
     <div className="flex flex-col items-center text-center">
-      <div className="relative w-72 h-80 rounded-lg aspect-3/4 overflow-hidden mb-4">
+      <div className="relative w-72 h-80 rounded-lg overflow-hidden mb-4">
         <Image
           src={image}
           alt={name}
           fill
+          sizes="(max-width: 768px) 100vw, 288px"
           className="object-cover object-top"
         />
       </div>

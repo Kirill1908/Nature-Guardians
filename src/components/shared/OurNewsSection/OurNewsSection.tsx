@@ -17,10 +17,10 @@ export default function OurNewsSection({
   const isMedia = pathname === "/media";
 
   return (
-    <section className={className}>
+    <section className={className} px-5>
       <div className="main-container">
         {!isMedia && (
-          <div className="flex items-center justify-between mb-12 px-6 md:px-0">
+          <div className=" px-5 flex items-center justify-between mb-12 md:px-0">
             <h2 className="text-4xl font-medium leading-14 text-gray-800">
               Read Our News
             </h2>
@@ -28,7 +28,7 @@ export default function OurNewsSection({
           </div>
         )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-9 gap-x-6 px-6 md:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-9 gap-x-6 px-5 md:px-0">
           {news.map((item) => (
             <div key={item.id} className="flex flex-col">
               <Link

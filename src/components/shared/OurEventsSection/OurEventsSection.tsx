@@ -44,14 +44,14 @@ export default function OurEventsSection({ currentEventId }: OurEventsProps) {
   return (
     <section className="pb-16 md:pb-24 bg-white">
       <div className="main-container">
-        <div className="flex items-center justify-between mb-12 px-6 md:px-0">
+        <div className="flex items-center justify-between mb-12 px-5 md:px-0">
           <h2 className="text-4xl font-medium leading-14 text-gray-800">
             {currentEventId ? "Other events" : "Our Events"}
           </h2>
           <div className="flex-1 h-px bg-[#E5E5E5] ml-6 md:block"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 md:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-5 md:px-0">
           {randomEvents.map((event) => {
             const { day, month } = formatDate(event.date);
 
@@ -85,7 +85,7 @@ export default function OurEventsSection({ currentEventId }: OurEventsProps) {
                     </span>
                   </h3>
                 </div>
-                <div className="self-center w-14 h-14 bg-white rounded-full flex items-center justify-center shrink-0 transition-all duration-500 ease-in-out group-hover:translate-x-3">
+                <div className="self-center w-14 h-14 bg-white rounded-full flex items-center justify-center shrink-0 transition-all duration-500 ease-in-out sm:group-hover:translate-x-3">
                   <FaArrowRightLong size={20} className="text-gray-800" />
                 </div>
               </Link>
