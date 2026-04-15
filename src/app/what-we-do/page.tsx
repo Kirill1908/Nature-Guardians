@@ -85,7 +85,9 @@ export default function WhatWeDoPage() {
             We are creating a sustainable society, for everyone.
           </h2>
         </div>
-        <ProjectsGrid />
+        <div className="px-5 md:px-0">
+          <ProjectsGrid />
+        </div>
       </div>
 
       <div className="py-16 md:py-24">
