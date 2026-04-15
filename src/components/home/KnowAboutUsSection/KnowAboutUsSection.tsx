@@ -52,7 +52,7 @@ export default function KnowAboutUsSection() {
           </div>
         </div>
 
-        <div className="flex-1 w-full flex justify-center md:justify-start md:ps-24 lg:ps-0 mt-12 md:mt-0">
+        <div className="flex-1 w-full flex justify-center md:justify-start lg:justify-end md:ps-24 lg:ps-0 mt-12 md:mt-0">
           <div className="relative overflow-hidden w-full max-w-120 max-h-145 aspect-auto rounded-2xl shadow-md group cursor-pointer">
             <video
               ref={videoRef}
