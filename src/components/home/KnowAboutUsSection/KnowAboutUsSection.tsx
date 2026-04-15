@@ -15,7 +15,7 @@ export default function KnowAboutUsSection() {
 
   return (
     <section className="px-5 py-16 md:py-24 overflow-hidden">
-      <div className="main-container flex flex-col md:gap-10 lg:flex-row items-center">
+      <div className="main-container flex flex-col md:gap-10 lg:flex-row">
         <div className="flex-[1.5] lg:flex-[1.2] w-full flex flex-col">
           <div className="flex items-center gap-6 mb-8">
             <span className="w-18 h-0.5 bg-gray-800"></span>
@@ -24,7 +24,7 @@ export default function KnowAboutUsSection() {
             </span>
           </div>
           <div className="md:ps-24">
-            <h2 className="mb-8 text-center md:text-start text-4xl lg:text-[48px] text-[#1D2130] font-bold leading-tight md:leading-[1.2]">
+            <h2 className="mb-8 text-center md:text-start text-4xl md:text-5xl text-[#1D2130] font-bold leading-tight md:leading-[1.2]">
               We help nature smile and survive everywhere
             </h2>
 
@@ -36,10 +36,9 @@ export default function KnowAboutUsSection() {
               </p>
               <p>
                 Through community-driven initiatives and global partnerships, we
-                empower people to make a real difference. Join us in our
-                commitment to building a healthier world for future
-                generations.
+                empower people to make a real difference.
               </p>
+              <p>By integrating modern technology with traditional ecological wisdom, we provide the tools necessary to monitor wildlife and preserve biodiversity in the face of a changing climate.</p>
             </div>
             <div className="text-center md:text-start mt-2">
               <Link
@@ -53,7 +52,7 @@ export default function KnowAboutUsSection() {
         </div>
 
         <div className="flex-1 w-full flex justify-center md:justify-start lg:justify-end md:ps-24 lg:ps-0 mt-12 md:mt-0">
-          <div className="relative overflow-hidden w-full max-w-120 max-h-145 aspect-auto rounded-2xl shadow-md group cursor-pointer">
+          <div className="lg:mt-[52px] relative overflow-hidden w-full max-w-120 max-h-145 aspect-auto rounded-xl group cursor-pointer">
             <video
               ref={videoRef}
               src="/videos/video-home.mp4"

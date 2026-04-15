@@ -50,7 +50,7 @@ export default function AboutUs() {
 
       <VideoSection />
 
-      <section className="pt-71 md:pt-79 -mt-55 px-5 pb-16 md:pb-24 bg-[#EFF7F2] overflow-hidden">
+      <section className="pt-78.75 md:pt-86.5 -mt-62.5 px-5 pb-16 md:pb-24 bg-[#EFF7F2] overflow-hidden">
         <div className="main-container lg:px-24 flex flex-col md:flex-row md:gap-14">
           <div className="flex-1 mb-12 md:mb-0">
             <div className="flex items-center gap-6 mb-6">

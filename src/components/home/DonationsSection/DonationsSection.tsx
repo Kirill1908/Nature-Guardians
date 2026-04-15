@@ -3,8 +3,8 @@ import DonutChart from "../DonutChart/DonutChart";
 
 export default function DonationsSection() {
   return (
-    <section className="w-full bg-[#0d0d0d] mb-16 md:mb-24">
-      <div className="py-16 md:py-24 bg-[#0d0d0d] main-container px-5 md:px-0">
+    <section className="w-full bg-[#0d0d0d] mb-16 md:mb-24 px-5">
+      <div className="py-16 md:py-24 bg-[#0d0d0d] main-container">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-0">
           <div className="flex-1 lg:max-w-152.75">
             <h2 className="text-3xl mb-4 md:text-5xl font-bold leading-snug md:leading-tight text-white">
