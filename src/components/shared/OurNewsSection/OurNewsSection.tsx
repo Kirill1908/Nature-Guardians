@@ -17,7 +17,7 @@ export default function OurNewsSection({
   const isMedia = pathname === "/media";
 
   return (
-    <section className={`${className} px-5`}>
+    <section className={className}>
       <div className="main-container">
         {!isMedia && (
           <div className=" px-5 flex items-center justify-between mb-12 md:px-0">
